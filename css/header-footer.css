@@ -1,0 +1,154 @@
+ .header .navbar-nav {
+   width: 100%;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+ }
+
+ .header .lrg-logo {
+   margin: 0;
+ }
+
+ .header .sm-logo {
+   display: none;
+ }
+
+ .header .nav-item .nav-link {
+   font-size: 1.125rem;
+   color: #878787;
+   font-weight: 600;
+   margin: 0px 10px;
+   white-space: nowrap;
+   font-family: "Poppins", Sans-serif;
+ }
+
+ .header .nav-item .nav-link:hover,
+ .header .nav-item .nav-link.show {
+   color: #2CC34A;
+   border-bottom: 3px solid #2CC34A;
+ }
+
+ .header .lrg-logo {
+   padding-left: 50px;
+   padding-right: 10px;
+ }
+
+ footer {
+   padding: 10px;
+   background-color: #F9F9F9;
+ }
+
+ footer p {
+   font-size: 1.25rem;
+   margin: 0px;
+   font-weight: 500;
+   color: #878787;
+   padding: 10px;
+   font-family: "Poppins", Sans-serif !important;
+ }
+
+ footer a {
+   text-decoration: none;
+   color: #2CC34A;
+   font-family: "Poppins", Sans-serif !important;
+ }
+
+ footer a:hover,
+ footer a:focus {
+   text-decoration: none;
+   color: #2CC34A;
+ }
+
+ @media (max-width: 1199.98px) {
+   .header .navbar-nav {
+     padding-left: 0px;
+   }
+
+   .header .sm-logo {
+     display: block;
+   }
+
+   .header .sml {
+     width: 50%;
+   }
+
+   .header .container {
+     max-width: 100%;
+     --bs-gutter-x: 1rem;
+   }
+
+   .header .lrg-logo,
+   .header .lrg {
+     display: none;
+   }
+
+   .header button.navbar-toggler {
+     border: none;
+     padding: 0px;
+     font-size: 0.8rem;
+   }
+
+   .header .navbar-toggler-icon {
+     background-image: url(../img/navigation-bar.svg);
+   }
+
+   .header .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+     background-image: url(../img/navigation-bar-close.svg);
+   }
+
+   .header .navbar-toggler-icon {
+     background-image: url(../img/navigation-bar.svg);
+   }
+
+   .header button.navbar-toggler:focus,
+   .header button.navbar-toggler:active {
+     box-shadow: none;
+     border: none;
+   }
+
+   .header .navbar-nav {
+     position: absolute;
+     z-index: 999;
+     width: 100%;
+     text-align: left;
+     align-items: self-start;
+   }
+
+   .header .nav-item {
+     width: 100%;
+   }
+
+   .header .nav-item:not(:first-of-type) {
+     border-top: 1px solid black;
+   }
+
+   .header .nav-item .nav-link {
+     margin: 0px;
+     padding: 10px 20px;
+     font-size: 0.8125rem;
+     color: #33373d;
+     font-family: "Roboto", Sans-serif;
+     font-weight: 500;
+   }
+
+   .header .nav-item .nav-link:hover,
+   .header .nav-item .nav-link.show {
+     color: white;
+     border-bottom: none;
+     background-color: #2CC34A;
+   }
+
+   .header .navbar-collapse {
+     width: 100%;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     right: 0;
+     background-color: white;
+   }
+
+   footer p {
+     font-size: 1rem;
+   }
+ }
