@@ -24,7 +24,8 @@
  }
 
  .header .nav-item .nav-link:hover,
- .header .nav-item .nav-link.show {
+ .header .nav-item .nav-link.show,
+ .header .nav-item.dropdown:hover .nav-link {
    color: #2CC34A;
    border-bottom: 3px solid #2CC34A;
  }
@@ -32,6 +33,22 @@
  .header .lrg-logo {
    padding-left: 50px;
    padding-right: 10px;
+ }
+
+ .header .dropdown-menu {
+   margin-top: 5px;
+ }
+
+ .header .dropdown-menu .dropdown-item {
+   font-size: 1.125rem;
+   color: #878787;
+   font-weight: 600;
+   font-family: "Poppins", Sans-serif;
+ }
+
+ .header .dropdown-menu .dropdown-item:hover {
+   color: white;
+   background-color: #2CC34A;
  }
 
  footer {
@@ -134,7 +151,7 @@
 
    .header .nav-item .nav-link:hover,
    .header .nav-item .nav-link.show {
-     color: white;
+     color: white !important;
      border-bottom: none;
      background-color: #2CC34A;
    }
@@ -150,5 +167,17 @@
 
    footer p {
      font-size: 1rem;
+   }
+ }
+
+ @media (min-width: 1200px) {
+   .navbar-nav li:hover>ul.dropdown-menu {
+     display: block;
+   }
+ }
+
+ @media (max-width: 1199.98px) {
+   .header .dropdown-menu[data-bs-popper] {
+     display: block;
    }
  }
