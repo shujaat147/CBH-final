@@ -1003,6 +1003,10 @@ body {
     padding-top: 0;
 }
 
+.banner .img-fluid {
+    width: 100%;
+}
+
 .banner .detail {
     color: #6EC1E4;
     font-size: 1.4rem;
@@ -1014,15 +1018,42 @@ body {
     color: #EFBB00;
 }
 
+@media (max-width: 1199.98px) {
+    .banner {
+        height: 25rem;
+    }
+
+    .banner .img-fluid {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
 @media (max-width: 991.98px) {
+
+    .banner .img-fluid {
+        max-width: 400px;
+        width: 400px;
+    }
+
+     .banner .h1 {
+        font-size: 250%;
+    }
+
+    .banner .detail {
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
     .banner {
         height: 100%;
     }
 
     .banner .img-fluid {
-        width: 80%;
+        width: 100%;
         object-fit: contain;
-        aspect-ratio: 3/2;
+        aspect-ratio: 1;
     }
 
     .banner .h1 {
@@ -1038,18 +1069,6 @@ body {
     .banner img {
         padding-top: 1rem;
         padding-bottom: 1rem;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .banner .img-fluid {
-        aspect-ratio: initial;
-    }
-}
-
-@media (min-width: 992px) {
-    .banner {
-        height: 32rem;
     }
 }
 
@@ -1101,13 +1120,33 @@ body {
     border-top-left-radius: 20px;
 }
 
+@media (max-width: 1199.98px) {
+    .blogs .card {
+        padding: 5px;
+        padding-bottom: 10px;
+    }
+
+    .blogs .g-4 {
+        --bs-gutter-y: 3rem;
+    }
+}
+
 @media (max-width: 991.98px) {
+
+    .blogs .card {
+        padding: 0px;
+    }
+
     .blogs .card-title {
         font-size: 1rem;
     }
 
     .blogs .card-text {
         font-size: 0.8rem;
+    }
+
+    .blogs .g-4 {
+        --bs-gutter-y: 1.5rem;
     }
 }
 
